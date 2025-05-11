@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int FACTORIAL(int n)
 {
 	if (n < 0)
 	{
-		cout << "Ôàêòîðèàë ìîæåò áûòü îïðåäåëåí òîëüêî äëÿ ïîëîæèòåëüíûõ öåëûõ ÷èñåë:";
+		cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ†ÐµÐ»Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»:";
 		return 0;
 	}
 	unsigned long long result = 1;
@@ -38,17 +38,17 @@ double POWER(double a, int n)
 int main()
 {
 	setlocale(LC_ALL, "");
-	//Ôàêòîðèàë
+	//Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»
 	int num;
-	cout << "Ââåäèòå öåëîå íåîòðèöàòåëüíîå ÷èñëî äëÿ âû÷èñëåíèÿ ôàêòîðèàëà: "; cin >> num;
-	cout << "Ôàêòîðèàë ÷èñëà " << num << " ðàâåí " << FACTORIAL(num) << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ð½ÐµÐ¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð´Ð»Ñ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»Ð°: "; cin >> num;
+	cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð° " << num << " Ñ€Ð°Ð²ÐµÐ½ " << FACTORIAL(num) << endl;
 
-	//Ñòåïåíü
+	//Ð¡Ñ‚ÐµÐ¿ÐµÐ½ÑŒ
 	double base;
 	int exponent;
-	cout << "Ââåäèòå ÷èñëî: "; cin >> base;
-	cout << "Ââåäèòå ñòåïåíü: "; cin >> exponent;
-	cout << base << " â ñòåïåíè " << exponent << " = " << POWER(base, exponent) << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> base;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: "; cin >> exponent;
+	cout << base << " Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ " << exponent << " = " << POWER(base, exponent) << endl;
 
 	return 0;
 }
